@@ -1,0 +1,17 @@
+<LINK REL=StyleSheet HREF="style.css">
+
+<% counter = 0 %>
+<% @search.movies.each do |movie| %>
+	<% counter += 1 %>
+	<% if counter < 10 %>
+		<div class="movie">
+		<img src="<%= movie.poster %>" alt="Poster" style="width:400px; height:500px;">
+		<br>
+		<button type="button" name="answer" class="button">Choose Me!</button>
+		</div>
+	<% end %>
+	<% if counter % 3 == 0 %>
+		<br>
+		<br>
+	<% end %>
+<% end %> 

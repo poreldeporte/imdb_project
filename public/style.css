@@ -1,0 +1,11 @@
+.movie {
+	float: left;
+}
+.button{
+	height: 50px;
+	width: 400px;
+
+}
+.button:hover{
+	background-color: red;
+}
