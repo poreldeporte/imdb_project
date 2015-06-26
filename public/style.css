@@ -1,11 +1,53 @@
+.background{
+	background-image: url(http://www.walls-inc.net/wallpapers/2013/02/Curtain-Red-1080x1920.jpg);
+	background-attachment: fixed;
+	margin: auto;
+	height: auto;
+}
+.label{
+	height: 75px;
+	width: 200px;
+	background-color: white;
+	font-size: 30pt;
+}
+.poster{
+	width:400px;
+	height:500px;
+}
 .movie {
 	float: left;
 }
 .button{
+	float: left;
+	margin-bottom: 20px;
 	height: 50px;
 	width: 400px;
-
 }
 .button:hover{
 	background-color: red;
+}
+.layout{
+	text-align: center;
+	font-size: 40pt;
+	color: white;
+	width: 1280px;
+	height: 2100px;
+	margin: auto;
+}
+.survey{
+	background-image: url(http://images5.fanpop.com/image/photos/29400000/Massive-B-Horror-Collage-Wallpaper-horror-movies-29491579-2560-1600.jpg);
+	background-attachment: fixed;
+	text-align: center;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 40pt;
+	height: 650px;
+	padding-top: 60px;
+}
+.search{
+	background-color: black;
+	width: 1135px;
+	height: 80px;
+	font-size: 30pt;
+	color: red;
 }

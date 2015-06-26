@@ -1,17 +1,24 @@
 <LINK REL=StyleSheet HREF="style.css">
 
-<% counter = 0 %>
-<% @search.movies.each do |movie| %>
-	<% counter += 1 %>
-	<% if counter < 10 %>
-		<div class="movie">
-		<img src="<%= movie.poster %>" alt="Poster" style="width:400px; height:500px;">
-		<br>
-		<button type="button" name="answer" class="button">Choose Me!</button>
-		</div>
-	<% end %>
-	<% if counter % 3 == 0 %>
-		<br>
-		<br>
-	<% end %>
-<% end %> 
+<div class="background">
+	<div class="layout">
+	<br>
+	WHICH MOVIE WAS RELEASED IN <%= @year %>
+		<% counter = 0 %>
+		<% @search.movies.each do |movie| %>
+			<% if counter <= 8 && movie.poster != nil %>
+				<% counter += 1 %>
+				<div class="movie">
+				<img src="<%= movie.poster %>" class="poster">
+				<br>
+				<form action="/results" method="POST">
+					<button type="submit" name="answer" class="button" value="<%= movie.id %>">Choose Me!</button>
+				</form>
+				</div>
+			<% end %>
+			<% if counter % 3 == 0 %>
+				<br>
+			<% end %>
+		<% end %> 
+	</div>
+</div>

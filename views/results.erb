@@ -1,0 +1,21 @@
+You chose:<h3><%= @i.title %></h3>
+<br>
+
+Filmed in Year: 
+<h3><%= @i.year %></h3>
+<br>
+
+The Answer is:
+<h3><%= @title_answer %></h3>
+<br> 
+
+Filmed in:<h3><%= @year_answer %></h3>
+<br>
+
+
+<% if @i.year == @year_answer %>
+	<h1>CONGRATS YOU WIN!</h1>
+<% else %>
+	<h1>SORRY YOU LOOSE!</h1>
+<% end %>
+
